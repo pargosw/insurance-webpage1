@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navlist{
+    margin-right: 300px;
+    font-size: small;
+}
+
+.navbarlogo{
+    margin-left: 200px;
+}
+
+.navlist li a:hover{
+    color: #14A44D !important;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+@media only screen and (max-width: 600px){
+    .container1{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: repeat(2,auto);
+    }
+}
+.box:hover{
+    background-image: url(./pexels-john-diez-7578209.jpg);
+    background-size: contain;
+    /* color: white; */
+}
+.box1:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.menu1{
+    background-image: url('./pexels-vidalbalielojrfotografia-1682497.jpg'); 
+    background-size:cover;
+
+}
+
+.menu1:hover{
+    transition: filter 0.3s ease;
+    filter: brightness(70%);  
+    transition: filter 0.3s ease; 
+    filter: brightness(70%); /* Darkens the image */
+    /* Smooth transition effect */
+
+}
+
+
+#centered{
+     color: green;
+     font-size: x-large;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     opacity: 0;
+}
+#centered:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#div1{
+    padding-top: 20px;
+    width: 820px;
+    border-bottom: 2px solid white;
+    height: 50px; 
+    position: absolute; 
+    margin-left: 150px;
+}
+@media only screen and (max-width: 1200px){
+    #div1{
+        display: none;
+    }
+}
+
+/* 
+.iconbx{
+    margin-left: 300px;
+} */
+
+
+.agent{
+    color: rgb(109, 109, 109);
+}
+
+.servlist li a{
+    color: rgb(109, 109, 109) !important; 
+
+}
+
+.servlist li a:hover{
+    color: #14A44D !important;
+}
+
+.contlist li{
+    color: rgb(109, 109, 109) !important; 
+
+}
+
+.contlist li i{
+    color: black;
+}
